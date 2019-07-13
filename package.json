@@ -1,0 +1,59 @@
+{
+    "name": "g-node",
+    "version": "1.0.0",
+    "description": "Generic Node.js Application for Hyperledger-fabric using Fabric-Node-SDK",
+    "main": "app.js",
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "nyc mocha --recursive",
+        "start": "node app.js"
+    },
+    "engines": {
+        "node": ">=8",
+        "npm": ">=5"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "chokidar": "^2.1.4",
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
+        "express-bearer-token": "^2.4.0",
+        "express-fileupload": "^1.1.4",
+        "express-jwt": "^5.3.1",
+        "fabric-ca-client": "~1.4.0",
+        "fabric-client": "^1.4.0",
+        "fabric-network": "~1.4.0",
+        "ipfs-api": "^26.1.2",
+        "jsonwebtoken": "^8.5.1",
+        "request": "^2.88.0",
+        "sha3": "^2.0.1"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "eslint": "^5.9.0",
+        "mocha": "^5.2.0",
+        "nyc": "^13.1.0",
+        "sinon": "^7.1.1",
+        "sinon-chai": "^3.3.0"
+    },
+    "nyc": {
+        "exclude": [
+            "coverage/**",
+            "test/**"
+        ],
+        "reporter": [
+            "text-summary",
+            "html"
+        ],
+        "all": true,
+        "check-coverage": true,
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+    },
+    "engineStrict": true,
+    "author": "jaswanth434",
+    "license": "ISC"
+}

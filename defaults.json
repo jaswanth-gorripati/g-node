@@ -1,0 +1,12 @@
+{
+    "Organisation": "Org1",
+    "Port": "4001",
+    "ChannelName": "mychannel",
+    "ChaincodeName": "mycc",
+    "AdminName": "admin",
+    "AdminPassword": "adminpw",
+    "Events": [
+        "Event1",
+        "Event2"
+    ]
+}

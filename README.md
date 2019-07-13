@@ -1,2 +1,3 @@
-# g-node
-generic node js for hyperledger-fabric
+## G-Node
+
+>Generic node js Application for hyperledger fabric
